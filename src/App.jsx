@@ -1,7 +1,12 @@
+import Container from './components/layout/Container'
 import Home from './pages/Home'
 
 function App() {
-    return <Home />
+  return (
+    <Container>
+      <Home />
+    </Container>
+  )
 }
 
 export default App
