@@ -8,24 +8,24 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="border-b border-slate-800 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+    <header className="border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md sticky top-0 z-50">
       <Container>
-        <nav className="flex items-center justify-between h-14 sm:h-16">
+        <nav className="flex items-center justify-between h-16 sm:h-[4.25rem]" aria-label="Navegación principal">
           {/* Logo / Nombre */}
           <a
             href="#"
-            className="text-slate-100 font-semibold text-lg hover:text-accent transition-colors"
+            className="text-slate-100 font-semibold text-lg tracking-tight hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-slate-950 rounded-sm"
           >
             Laura Prieto
           </a>
 
           {/* Links - visible en desktop */}
-          <ul className="hidden sm:flex items-center gap-6">
+          <ul className="hidden sm:flex items-center gap-8">
             {links.map(({ label, href }) => (
               <li key={href}>
                 <a
                   href={href}
-                  className="text-slate-400 hover:text-slate-100 transition-colors text-sm font-medium"
+                  className="text-slate-400 hover:text-slate-100 transition-colors text-sm font-medium focus:outline-none focus:text-slate-100 rounded-sm"
                 >
                   {label}
                 </a>
@@ -34,7 +34,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#contact"
-                className="text-accent hover:text-accent-hover transition-colors"
+                className="text-accent hover:text-accent-hover transition-colors text-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-slate-950 rounded-sm"
                 aria-label="Contacto"
               >
                 ✉
@@ -42,18 +42,18 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* Menú móvil (hamburger) - por ahora mismo contenido que desktop */}
-          <div className="flex sm:hidden items-center gap-4">
+          {/* Menú móvil */}
+          <div className="flex sm:hidden items-center gap-3">
             {links.map(({ label, href }) => (
               <a
                 key={href}
                 href={href}
-                className="text-slate-400 hover:text-slate-100 text-sm"
+                className="text-slate-400 hover:text-slate-100 text-sm font-medium py-2 px-1"
               >
                 {label}
               </a>
             ))}
-            <a href="#contact" className="text-accent" aria-label="Contacto">
+            <a href="#contact" className="text-accent p-2 -m-2 rounded-sm hover:text-accent-hover" aria-label="Contacto">
               ✉
             </a>
           </div>
