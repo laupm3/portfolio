@@ -1,11 +1,15 @@
 import Container from './components/layout/Container'
+import Navbar from './components/ui/Navbar'
 import Home from './pages/Home'
 
 function App() {
   return (
-    <Container>
-      <Home />
-    </Container>
+    <>
+      <Navbar />
+      <Container>
+        <Home />
+      </Container>
+    </>
   )
 }
 
