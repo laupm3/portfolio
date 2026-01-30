@@ -17,7 +17,7 @@ const sectionVariants = {
 
 export default function Home() {
   return (
-    <main>
+    <main id="main">
       <Hero />
       <motion.div
         initial="offscreen"
