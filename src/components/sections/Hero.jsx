@@ -1,5 +1,6 @@
-// eslint-disable-next-line no-unused-vars -- motion used as motion.section, motion.p, etc. in JSX
+import Container from "../layout/Container"
 import { motion } from 'framer-motion'
+import { profile } from '../../data/profile'
 
 const container = {
   hidden: { opacity: 0 },
@@ -33,13 +34,13 @@ export default function Hero() {
           variants={item}
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-100 mb-4 tracking-tight leading-tight"
         >
-          Laura Prieto
+          {profile.name}
         </motion.h1>
         <motion.p
           variants={item}
           className="text-xl sm:text-2xl text-accent font-semibold mb-8 tracking-tight"
         >
-          Frontend Developer
+          {profile.role}
         </motion.p>
         <motion.p
           variants={item}

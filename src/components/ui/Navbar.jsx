@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Container from '../layout/Container'
+import { profile } from '../../data/profile'
 
 const links = [
   { label: 'About', href: '#about' },
@@ -22,7 +23,7 @@ export default function Navbar() {
             href="#"
             className="text-slate-100 font-semibold text-lg tracking-tight hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-slate-950 rounded-sm"
           >
-            Laura Prieto
+            {profile.name}
           </a>
 
           {/* Links - visible en desktop */}
@@ -75,9 +76,8 @@ export default function Navbar() {
 
       {/* Panel móvil desplegable */}
       <div
-        className={`sm:hidden overflow-hidden transition-all duration-300 ease-out ${
-          menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        className={`sm:hidden overflow-hidden transition-all duration-300 ease-out ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+          }`}
         aria-hidden={!menuOpen}
       >
         <div className="border-t border-slate-800/80 bg-slate-950/95 py-4 px-4">
