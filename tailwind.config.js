@@ -4,45 +4,45 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        // Identidad visual del portfolio (usa en componentes: bg-background, text-primary, bg-accent...)
-        background: {
-          DEFAULT: '#0f172a', // slate-950
-          light: '#1e293b',   // slate-800
-        },
-        primary: '#f1f5f9',   // texto principal (slate-100)
-        muted: '#94a3b8',     // texto secundario (slate-400)
-        accent: {
-          DEFAULT: '#818cf8',   // indigo-400
-          hover: '#6366f1',     // indigo-500
-        },
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        card: "hsl(var(--card))",
+        "card-foreground": "hsl(var(--card-foreground))",
+        popover: "hsl(var(--popover))",
+        "popover-foreground": "hsl(var(--popover-foreground))",
+        primary: "hsl(var(--primary))",
+        "primary-foreground": "hsl(var(--primary-foreground))",
+        secondary: "hsl(var(--secondary))",
+        "secondary-foreground": "hsl(var(--secondary-foreground))",
+        muted: "hsl(var(--muted))",
+        "muted-foreground": "hsl(var(--muted-foreground))",
+        accent: "hsl(var(--accent))",
+        "accent-foreground": "hsl(var(--accent-foreground))",
+        destructive: "hsl(var(--destructive))",
+        "destructive-foreground": "hsl(var(--destructive-foreground))",
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
       },
       fontFamily: {
         sans: [
+          'Inter',
           'system-ui',
           '-apple-system',
           'BlinkMacSystemFont',
           '"Segoe UI"',
           'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
           'sans-serif',
         ],
       },
-      typography: {
-        // Jerarquía clara de tipografía
-        h1: {
-          fontSize: '3rem',
-          fontWeight: '700',
-          lineHeight: '1.2',
-        },
-        h2: {
-          fontSize: '2rem',
-          fontWeight: '600',
-          lineHeight: '1.3',
-        },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },

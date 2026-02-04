@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-slate-800/80 bg-slate-950 py-8 mt-auto">
+    <footer className="border-t border-border/40 bg-background py-8 mt-auto">
       <Container>
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <p className="text-slate-500 text-sm">
+          <p className="text-muted-foreground text-sm">
             © {currentYear} {profile.name}. Todos los derechos reservados.
           </p>
 
@@ -18,7 +18,7 @@ export default function Footer() {
                 href={profile.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 hover:text-accent transition-colors text-sm"
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
               >
                 GitHub
               </a>
@@ -28,7 +28,7 @@ export default function Footer() {
                 href={profile.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 hover:text-accent transition-colors text-sm"
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
               >
                 LinkedIn
               </a>
@@ -36,7 +36,7 @@ export default function Footer() {
             <li>
               <a
                 href={`mailto:${profile.email}`}
-                className="text-slate-500 hover:text-accent transition-colors text-sm"
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
               >
                 Email
               </a>

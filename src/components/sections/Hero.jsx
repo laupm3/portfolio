@@ -26,25 +26,25 @@ export default function Hero() {
       <div className="max-w-2xl">
         <motion.p
           variants={item}
-          className="text-slate-400 text-lg sm:text-xl mb-3 tracking-wide"
+          className="text-muted-foreground text-lg sm:text-xl mb-3 tracking-wide"
         >
           Hola, soy
         </motion.p>
         <motion.h1
           variants={item}
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-100 mb-4 tracking-tight leading-tight"
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 tracking-tight leading-tight"
         >
           {profile.name}
         </motion.h1>
         <motion.p
           variants={item}
-          className="text-xl sm:text-2xl text-accent font-semibold mb-8 tracking-tight"
+          className="text-xl sm:text-2xl text-accent-foreground font-semibold mb-8 tracking-tight"
         >
           {profile.role}
         </motion.p>
         <motion.p
           variants={item}
-          className="text-slate-400 text-base sm:text-lg leading-relaxed mb-12 max-w-xl"
+          className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-12 max-w-xl"
         >
           Desarrollo interfaces modernas, accesibles y optimizadas,
           usando tecnologías como JavaScript, React y Tailwind CSS.
@@ -55,13 +55,13 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-semibold py-3.5 px-7 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-slate-950"
+            className="inline-flex items-center justify-center bg-accent-foreground hover:bg-accent-foreground/90 text-white font-semibold py-3.5 px-7 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
           >
             Ver proyectos
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center border border-slate-600 text-slate-100 hover:bg-slate-800/50 hover:border-slate-500 font-semibold py-3.5 px-7 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-950"
+            className="inline-flex items-center justify-center border border-input text-foreground hover:bg-accent hover:text-accent-foreground font-semibold py-3.5 px-7 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
           >
             Contacto
           </a>
