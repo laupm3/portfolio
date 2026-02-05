@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Container from '../layout/Container'
 import { profile } from '../../data/profile'
 import ThemeToggle from './ThemeToggle'
+import LanguageToggle from './LanguageToggle'
 
 const links = [
   { label: 'About', href: '#about' },
@@ -45,12 +46,16 @@ export default function Navbar() {
               <div className="w-px h-6 bg-border mx-2"></div>
             </li>
             <li>
+              <LanguageToggle />
+            </li>
+            <li>
               <ThemeToggle />
             </li>
           </ul>
 
           {/* Botón hamburger - solo móvil */}
-          <div className="flex items-center gap-4 sm:hidden">
+          <div className="flex items-center gap-3 sm:hidden">
+            <LanguageToggle />
             <ThemeToggle />
             <button
               type="button"

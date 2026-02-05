@@ -1,0 +1,58 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Servicios",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "greeting": "HOLA, SOY",
+        "role": "Y soy",
+        "description": "Me apasiona crear sitios web bonitos y responsivos. Especializado en tecnologías web modernas como React y CSS avanzado.",
+        "cta": "Ver Proyectos"
+    },
+    "about": {
+        "title": "Sobre",
+        "subtitle": "Mí",
+        "description": "Soy una desarrolladora frontend apasionada por crear experiencias web excepcionales. Me encanta transformar diseños en código limpio y eficiente.",
+        "codeTitle": "Mi Stack Tecnológico"
+    },
+    "skills": {
+        "subtitle": "What I Do",
+        "title": "Mis",
+        "titleHighlight": "Servicios"
+    },
+    "projects": {
+        "subtitle": "Mi Trabajo",
+        "title": "Proyectos",
+        "titleHighlight": "Destacados",
+        "viewDemo": "Ver Demo",
+        "viewCode": "Ver Código"
+    },
+    "contact": {
+        "subtitle": "Get in Touch",
+        "title": "Let's Work",
+        "titleHighlight": "Together",
+        "description": "Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and creative ideas.",
+        "email": "Email",
+        "emailCta": "Send Mail",
+        "linkedin": "LinkedIn",
+        "linkedinCta": "Connect",
+        "github": "GitHub",
+        "githubCta": "Follow",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "sending": "Enviando...",
+            "sent": "¡Mensaje Enviado!",
+            "submit": "Enviar Mensaje"
+        }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados.",
+        "madeWith": "Hecho con",
+        "by": "por"
+    }
+}

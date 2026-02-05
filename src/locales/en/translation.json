@@ -1,0 +1,58 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Services",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "HI, I'M",
+        "role": "And I'm a",
+        "description": "I'm passionate about creating beautiful and responsive websites. Specialized in modern web technologies like React and advanced CSS.",
+        "cta": "View Projects"
+    },
+    "about": {
+        "title": "About",
+        "subtitle": "Me",
+        "description": "I'm a frontend developer passionate about creating exceptional web experiences. I love transforming designs into clean and efficient code.",
+        "codeTitle": "My Tech Stack"
+    },
+    "skills": {
+        "subtitle": "What I Do",
+        "title": "My",
+        "titleHighlight": "Services"
+    },
+    "projects": {
+        "subtitle": "My Work",
+        "title": "Featured",
+        "titleHighlight": "Projects",
+        "viewDemo": "View Demo",
+        "viewCode": "View Code"
+    },
+    "contact": {
+        "subtitle": "Get in Touch",
+        "title": "Let's Work",
+        "titleHighlight": "Together",
+        "description": "Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and creative ideas.",
+        "email": "Email",
+        "emailCta": "Send Mail",
+        "linkedin": "LinkedIn",
+        "linkedinCta": "Connect",
+        "github": "GitHub",
+        "githubCta": "Follow",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "sending": "Sending...",
+            "sent": "Message Sent!",
+            "submit": "Send Message"
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "madeWith": "Made with",
+        "by": "by"
+    }
+}
