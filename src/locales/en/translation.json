@@ -44,9 +44,9 @@
         "viewDemo": "View Demo",
         "viewCode": "View Code",
         "items": {
-            "tictactoe": {
-                "title": "Tic Tac Toe",
-                "description": "Classic Tic Tac Toe game providing an engaging user experience. Built with React state management and Tailwind CSS for styling."
+            "rrhh": {
+                "title": "RRHH Application",
+                "description": "RRHH Application built with React, Laravel and Tailwind CSS integrated with Inertia.js, designed to manage employee data in a company."
             },
             "weather": {
                 "title": "Weather App",
