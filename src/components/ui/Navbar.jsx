@@ -18,38 +18,34 @@ export default function Navbar() {
   return (
     <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <Container>
-        <nav className="flex items-center justify-between h-16 sm:h-[4.25rem]" aria-label="Navegación principal">
-          {/* Logo / Nombre */}
+        <nav className="flex items-center justify-between h-20" aria-label="Navegación principal">
+          {/* Logo / Nombre - Cyber Style */}
           <a
             href="#"
-            className="text-foreground font-bold text-lg tracking-tight hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded-sm"
+            className="text-xl font-bold tracking-tighter text-foreground group"
           >
-            {profile.name}
+            <span className="text-primary">&lt;</span>
+            {profile.name.split(' ')[0]}
+            <span className="text-primary">/&gt;</span>
           </a>
 
           {/* Links - visible en desktop */}
-          <ul className="hidden sm:flex items-center gap-6">
+          <ul className="hidden sm:flex items-center gap-8">
             {links.map(({ label, href }) => (
               <li key={href}>
                 <a
                   href={href}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium focus:outline-none focus:text-foreground rounded-sm"
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm font-semibold uppercase tracking-wide hover:underline decoration-primary decoration-2 underline-offset-4"
                 >
                   {label}
                 </a>
               </li>
             ))}
             <li>
-              <ThemeToggle />
+              <div className="w-px h-6 bg-border mx-2"></div>
             </li>
             <li>
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9"
-                aria-label="Contacto"
-              >
-                ✉
-              </a>
+              <ThemeToggle />
             </li>
           </ul>
 
