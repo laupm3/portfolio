@@ -5,6 +5,44 @@ import { Mail, Linkedin, Github, Send, Loader2, CheckCircle2 } from 'lucide-reac
 import Container from '../layout/Container';
 import { profile } from '../../data/profile';
 
+const InputField = ({ label, name, type = "text", value, onChange, required = true }) => (
+  <div className="relative group">
+    <input
+      type={type}
+      id={name}
+      name={name}
+      value={value}
+      onChange={onChange}
+      required={required}
+      placeholder=" "
+      className="peer w-full px-4 py-3 pt-6 rounded-xl bg-background/50 border border-border group-hover:border-primary/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300 placeholder-transparent"
+    />
+    <label
+      htmlFor={name}
+      className="absolute left-4 top-2 text-xs font-medium text-muted-foreground transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground/70 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary"
+    >
+      {label}
+    </label>
+  </div>
+);
+
+const SocialCard = ({ icon: Icon, label, value, href }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex flex-row sm:flex-col items-center justify-center gap-3 sm:gap-0 p-3 sm:p-4 rounded-xl bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/5 group transition-all duration-300 hover:-translate-y-1"
+  >
+    <div className="p-2 sm:p-3 rounded-full bg-secondary/50 text-foreground group-hover:bg-primary group-hover:text-primary-foreground sm:mb-3 transition-colors">
+      <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+    </div>
+    <div className="flex flex-col sm:items-center">
+      <span className="text-sm font-medium text-foreground sm:mb-1">{label}</span>
+      <span className="text-xs text-muted-foreground group-hover:text-primary transition-colors truncate max-w-full hidden sm:block">{value}</span>
+    </div>
+  </a>
+);
+
 const Contact = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
@@ -34,44 +72,6 @@ const Contact = () => {
       setFormData({ name: '', email: '', message: '' });
     }, 3000);
   };
-
-  const InputField = ({ label, name, type = "text", value, onChange, required = true }) => (
-    <div className="relative group">
-      <input
-        type={type}
-        id={name}
-        name={name}
-        value={value}
-        onChange={onChange}
-        required={required}
-        placeholder=" "
-        className="peer w-full px-4 py-3 pt-6 rounded-xl bg-background/50 border border-border group-hover:border-primary/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300 placeholder-transparent"
-      />
-      <label
-        htmlFor={name}
-        className="absolute left-4 top-2 text-xs font-medium text-muted-foreground transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground/70 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary"
-      >
-        {label}
-      </label>
-    </div>
-  );
-
-  const SocialCard = ({ icon: Icon, label, value, href }) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex flex-row sm:flex-col items-center justify-center gap-3 sm:gap-0 p-3 sm:p-4 rounded-xl bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/5 group transition-all duration-300 hover:-translate-y-1"
-    >
-      <div className="p-2 sm:p-3 rounded-full bg-secondary/50 text-foreground group-hover:bg-primary group-hover:text-primary-foreground sm:mb-3 transition-colors">
-        <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
-      </div>
-      <div className="flex flex-col sm:items-center">
-        <span className="text-sm font-medium text-foreground sm:mb-1">{label}</span>
-        <span className="text-xs text-muted-foreground group-hover:text-primary transition-colors truncate max-w-full hidden sm:block">{value}</span>
-      </div>
-    </a>
-  );
 
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
