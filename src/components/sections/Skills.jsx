@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Layout, Palette, Zap } from 'lucide-react';
 import Container from '../layout/Container';
-import { services } from '../../data/skills';
 
 // Map icon strings to components
 const iconMap = {
@@ -14,6 +13,28 @@ const iconMap = {
 
 export default function Skills() {
   const { t } = useTranslation();
+
+  // Define services structure with translation keys
+  const services = [
+    {
+      titleKey: 'services.frontend.title',
+      descriptionKey: 'services.frontend.description',
+      icon: 'layout',
+      tools: ['React', 'Tailwind', 'JavaScript', 'HTML/CSS']
+    },
+    {
+      titleKey: 'services.uiux.title',
+      descriptionKey: 'services.uiux.description',
+      icon: 'palette',
+      tools: ['Figma', 'Framer Motion', 'Responsive Design', 'Accessibility']
+    },
+    {
+      titleKey: 'services.performance.title',
+      descriptionKey: 'services.performance.description',
+      icon: 'zap',
+      tools: ['Vite', 'SEO', 'Performance', 'Clean Code']
+    }
+  ];
 
   return (
     <section id="skills" className="py-20 lg:py-32 relative overflow-hidden">
@@ -41,45 +62,51 @@ export default function Skills() {
           </motion.h2>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
-            const Icon = iconMap[service.icon] || Layout;
-
+            const Icon = iconMap[service.icon];
             return (
               <motion.div
-                key={service.title}
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(0,234,255,0.1)] flex flex-col items-center text-center"
+                className="group relative bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,234,255,0.1)] dark:hover:shadow-[0_0_30px_rgba(0,234,255,0.15)]"
               >
-                <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
-
-                <div className="relative z-10 w-16 h-16 mb-6 rounded-2xl bg-secondary/50 border border-border/50 flex items-center justify-center text-primary group-hover:scale-110 group-hover:text-primary transition-all duration-300 shadow-lg group-hover:shadow-[0_0_20px_rgba(0,234,255,0.2)]">
-                  <Icon className="w-8 h-8" />
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="p-4 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110">
+                    <Icon className="w-8 h-8" />
+                  </div>
                 </div>
 
-                <h3 className="relative z-10 text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                  {service.title}
+                {/* Title */}
+                <h3 className="text-xl font-bold text-foreground mb-3 text-center group-hover:text-primary transition-colors">
+                  {t(service.titleKey)}
                 </h3>
 
-                <p className="relative z-10 text-muted-foreground text-sm leading-relaxed mb-6">
-                  {service.description}
+                {/* Description */}
+                <p className="text-muted-foreground text-center mb-6 leading-relaxed">
+                  {t(service.descriptionKey)}
                 </p>
 
-                <div className="relative z-10 flex flex-wrap justify-center gap-2 mt-auto">
-                  {service.tools.map((tool) => (
-                    <span key={tool} className="px-2 py-1 text-xs font-medium rounded-md bg-background/50 border border-border/30 text-muted-foreground group-hover:text-foreground group-hover:border-primary/30 transition-colors">
+                {/* Tools */}
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {service.tools.map((tool, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 text-xs font-medium bg-secondary/50 text-foreground rounded-full border border-border/50"
+                    >
                       {tool}
                     </span>
                   ))}
                 </div>
               </motion.div>
-            )
+            );
           })}
         </div>
       </Container>
     </section>
-  )
+  );
 }

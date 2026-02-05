@@ -23,12 +23,40 @@
         "title": "Mis",
         "titleHighlight": "Servicios"
     },
+    "services": {
+        "frontend": {
+            "title": "Desarrollo Frontend",
+            "description": "Construyo sitios web responsivos y de carga rápida usando tecnologías modernas como React, Tailwind CSS y Vite. Me enfoco en crear experiencias pixel-perfect."
+        },
+        "uiux": {
+            "title": "Implementación UI/UX",
+            "description": "Traduzco diseños en interfaces interactivas, accesibles y amigables. Aseguro animaciones fluidas y navegación intuitiva."
+        },
+        "performance": {
+            "title": "Optimización de Rendimiento",
+            "description": "Optimizo aplicaciones web para velocidad y eficiencia. Implemento mejores prácticas de SEO y aseguro compatibilidad entre navegadores."
+        }
+    },
     "projects": {
         "subtitle": "Mi Trabajo",
         "title": "Proyectos",
         "titleHighlight": "Destacados",
         "viewDemo": "Ver Demo",
-        "viewCode": "Ver Código"
+        "viewCode": "Ver Código",
+        "items": {
+            "tictactoe": {
+                "title": "Tic Tac Toe",
+                "description": "Juego clásico de Tic Tac Toe que proporciona una experiencia de usuario atractiva. Construido con gestión de estado de React y Tailwind CSS para el estilo."
+            },
+            "weather": {
+                "title": "App del Clima",
+                "description": "Aplicación de clima en tiempo real que obtiene datos de APIs externas. Presenta cambios de fondo dinámicos basados en las condiciones climáticas."
+            },
+            "portfolio": {
+                "title": "Sitio Web Portfolio",
+                "description": "Sitio web portfolio moderno y responsivo con estética Cyber/Dark, animaciones suaves y formulario de contacto."
+            }
+        }
     },
     "contact": {
         "subtitle": "Ponte en Contacto",
