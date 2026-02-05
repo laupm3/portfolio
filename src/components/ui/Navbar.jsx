@@ -97,7 +97,7 @@ export default function Navbar() {
                 <a
                   href={href}
                   onClick={closeMenu}
-                  className="block py-2.5 px-3 text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg text-sm font-medium transition-colors"
+                  className="block py-2 px-3 text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg text-[15px] font-medium transition-colors"
                 >
                   {label}
                 </a>
