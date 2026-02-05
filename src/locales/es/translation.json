@@ -9,7 +9,7 @@
     "hero": {
         "greeting": "HOLA, SOY",
         "role": "Y soy",
-        "description": "Me apasiona crear sitios web bonitos y responsivos. Especializado en tecnologías web modernas como React y CSS avanzado.",
+        "description": "Me apasiona crear sitios web funcionales y responsivos. Especializado en tecnologías web modernas como React y CSS avanzado.",
         "cta": "Ver Proyectos"
     },
     "about": {
@@ -59,9 +59,9 @@
         }
     },
     "contact": {
-        "subtitle": "Ponte en Contacto",
-        "title": "Trabajemos",
-        "titleHighlight": "Juntos",
+        "subtitle": "Trabajemos Juntos",
+        "title": "Ponte en",
+        "titleHighlight": "Contacto",
         "description": "¿Tienes un proyecto en mente o simplemente quieres saludar? Siempre estoy abierta a discutir nuevas oportunidades e ideas creativas.",
         "email": "Email",
         "emailCta": "Enviar Correo",
