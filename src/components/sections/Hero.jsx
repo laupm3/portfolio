@@ -94,7 +94,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-full bg-muted overflow-hidden border-2 border-primary shadow-[0_0_30px_rgba(6,182,212,0.3)]">
                 {/* Placeholder image logic: If no image specifically set, use a generic dev avatar or just a gradient div */}
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src={profile.image || "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"}
                   alt={profile.name}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
