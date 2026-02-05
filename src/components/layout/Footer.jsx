@@ -15,7 +15,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {profile.name}. {t('footer.rights')}
           </p>
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            {t('footer.madeWith')} <Heart className="w-4 h-4 text-red-500 fill-red-500 animate-pulse" /> {t('footer.by')} {profile.name}
+            {t('footer.madeWith')} <Heart className="w-4 h-4 text-blue-500 fill-blue-500 animate-pulse" /> {t('footer.by')} {profile.name}
           </p>
 
           <div className="flex items-center gap-6">
