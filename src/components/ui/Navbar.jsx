@@ -103,15 +103,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="#contact"
-                onClick={closeMenu}
-                className="flex items-center gap-2 py-2.5 px-3 text-foreground hover:bg-accent rounded-lg text-sm font-medium transition-colors"
-              >
-                ✉ Contacto
-              </a>
-            </li>
           </ul>
         </div>
       </div>
