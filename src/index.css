@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,78 +6,68 @@
 
 @layer base {
   :root {
-    /* Mimicking High-End Portfolio Light Mode */
-    /* Crisp White Background, not tinted */
-    --background: 0 0% 100%;
-    /* white */
-    --foreground: 240 10% 4%;
-    /* almost black */
+    /* Forcing Cyber Theme for both modes initially to match request, 
+       or distinct Light mode if desired. Assuming Dark Mode focus based on image. */
 
+    /* Light Mode (Optional, clean slate) */
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 190 100% 50%;
+    /* Cyan */
+    --primary-foreground: 195 90% 10%;
+    /* ... other light mode vars kept standard ... */
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 4%;
-
+    --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 4%;
-
-    /* Primary is Black in Light Mode for max contrast */
-    --primary: 240 6% 10%;
-    /* jet black */
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 5% 96%;
-    /* very light gray */
-    --secondary-foreground: 240 6% 10%;
-
-    --muted: 240 5% 96%;
-    --muted-foreground: 240 4% 46%;
-
-    /* Accent can be subtle in light mode or vibrant */
-    --accent: 240 5% 96%;
-    --accent-foreground: 240 6% 10%;
-
+    --popover-foreground: 222.2 84% 4.9%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 190 100% 50%;
+    --accent-foreground: 195 90% 10%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 6% 90%;
-    /* light gray */
-    --input: 240 6% 90%;
-    --ring: 240 10% 4%;
-
-    --radius: 0.75rem;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 190 100% 50%;
+    --radius: 1rem;
   }
 
   .dark {
-    /* Maintained Cyber/Neon Dark Mode */
-    --background: 224 71% 4%;
-    /* Deep Dark Blue/Black */
+    /* REFERENCE MATCHING PALETTE */
+    --background: 220 15% 4%;
+    /* Very Deep Black-Blue (#080a0f approx) */
     --foreground: 210 40% 98%;
 
-    --card: 222.2 47% 11%;
-    /* Dark Slate Card */
+    --card: 220 15% 8%;
+    /* Slightly lighter black for cards */
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 47% 11%;
+    --popover: 220 15% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 190 100% 50%;
-    /* Neon Cyan */
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 195 100% 50%;
+    /* Electric Cyan (#00EAFF approx) */
+    --primary-foreground: 220 15% 4%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 217 19% 27%;
+    /* Dark Grey for muted elements */
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 190 100% 50%;
+    --accent: 195 100% 50%;
+    /* Cyan for accents */
+    --accent-foreground: 220 15% 4%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 190 100% 50%;
+    --border: 220 15% 12%;
+    --input: 220 15% 16%;
+    --ring: 195 100% 50%;
   }
 }
 
@@ -88,7 +78,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    /* Changed to Poppins for that specific look */
   }
 }
