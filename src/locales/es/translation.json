@@ -19,7 +19,7 @@
         "codeTitle": "Mi Stack Tecnológico"
     },
     "skills": {
-        "subtitle": "What I Do",
+        "subtitle": "Lo Que Hago",
         "title": "Mis",
         "titleHighlight": "Servicios"
     },
@@ -31,16 +31,16 @@
         "viewCode": "Ver Código"
     },
     "contact": {
-        "subtitle": "Get in Touch",
-        "title": "Let's Work",
-        "titleHighlight": "Together",
-        "description": "Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and creative ideas.",
+        "subtitle": "Ponte en Contacto",
+        "title": "Trabajemos",
+        "titleHighlight": "Juntos",
+        "description": "¿Tienes un proyecto en mente o simplemente quieres saludar? Siempre estoy abierta a discutir nuevas oportunidades e ideas creativas.",
         "email": "Email",
-        "emailCta": "Send Mail",
+        "emailCta": "Enviar Correo",
         "linkedin": "LinkedIn",
-        "linkedinCta": "Connect",
+        "linkedinCta": "Conectar",
         "github": "GitHub",
-        "githubCta": "Follow",
+        "githubCta": "Seguir",
         "form": {
             "name": "Nombre",
             "email": "Email",
