@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Layout, Palette, Zap } from 'lucide-react';
 import Container from '../layout/Container';
 import { services } from '../../data/skills';
@@ -12,6 +13,8 @@ const iconMap = {
 };
 
 export default function Skills() {
+  const { t } = useTranslation();
+
   return (
     <section id="skills" className="py-20 lg:py-32 relative overflow-hidden">
       {/* Background decorations */}
@@ -25,7 +28,7 @@ export default function Skills() {
             viewport={{ once: true }}
             className="text-primary font-medium tracking-wider text-sm uppercase block mb-2"
           >
-            What I Do
+            {t('skills.subtitle')}
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -34,7 +37,7 @@ export default function Skills() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70"
           >
-            My <span className="text-primary">Services</span>
+            {t('skills.title')} <span className="text-primary">{t('skills.titleHighlight')}</span>
           </motion.h2>
         </div>
 

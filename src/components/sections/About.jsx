@@ -1,43 +1,36 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Code2, Terminal, Cpu } from 'lucide-react';
 import Container from '../layout/Container';
 
-const About = () => {
+export default function About() {
+  const { t } = useTranslation();
+
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
+    <section id="about" className="py-20 lg:py-32 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -z-10 -translate-y-1/2" />
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-3xl -z-10" />
 
       <Container>
-        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
-
-          {/* Content Side */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Left: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="flex-1"
           >
             <motion.span
               className="text-primary font-medium tracking-wider text-sm uppercase block mb-2"
             >
-              Who I Am
+              {t('about.title')}
             </motion.span>
             <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 mb-6">
-              Sobre <span className="text-primary">Mí</span>
+              {t('about.title')} <span className="text-primary">{t('about.subtitle')}</span>
             </h2>
-
-            <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
-              <p>
-                Me dedico al desarrollo frontend con foco en interfaces claras, accesibles y rápidas.
-                Me gusta aprender nuevas herramientas y trabajar en equipo para llevar ideas al producto.
-              </p>
-              <p>
-                Disfruto transformar diseños en interfaces funcionales, optimizadas y accesibles,
-                y seguir aprendiendo nuevas herramientas del ecosistema frontend.
-              </p>
-            </div>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              {t('about.description')}
+            </p>
 
             {/* Tech Stack / Highlights */}
             <div className="grid grid-cols-2 gap-4 mt-8">
@@ -95,6 +88,4 @@ const About = () => {
       </Container>
     </section>
   );
-};
-
-export default About;
+}

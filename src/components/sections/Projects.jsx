@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Github, ExternalLink, Code2 } from 'lucide-react';
 import Container from '../layout/Container';
 import { projects } from '../../data/projects';
 
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
       {/* Background decorations */}
@@ -19,7 +21,7 @@ const Projects = () => {
             viewport={{ once: true }}
             className="text-primary font-medium tracking-wider text-sm uppercase block mb-2"
           >
-            My Work
+            {t('projects.subtitle')}
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -28,7 +30,7 @@ const Projects = () => {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70"
           >
-            Featured <span className="text-primary">Projects</span>
+            {t('projects.title')} <span className="text-primary">{t('projects.titleHighlight')}</span>
           </motion.h2>
         </div>
 

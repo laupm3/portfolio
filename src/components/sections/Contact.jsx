@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Mail, Linkedin, Github, Send, Loader2, CheckCircle2 } from 'lucide-react';
 import Container from '../layout/Container';
 import { profile } from '../../data/profile';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -84,7 +86,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-primary font-medium tracking-wider text-sm uppercase block mb-2"
           >
-            Get in Touch
+            {t('contact.subtitle')}
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -93,7 +95,7 @@ const Contact = () => {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 mb-4"
           >
-            Let's Work <span className="text-primary">Together</span>
+            {t('contact.title')} <span className="text-primary">{t('contact.titleHighlight')}</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +104,7 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="text-muted-foreground text-lg max-w-2xl mx-auto"
           >
-            Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and creative ideas.
+            {t('contact.description')}
           </motion.p>
         </div>
 
@@ -116,20 +118,20 @@ const Contact = () => {
         >
           <SocialCard
             icon={Mail}
-            label="Email"
-            value="Send Mail"
+            label={t('contact.email')}
+            value={t('contact.emailCta')}
             href={`mailto:${profile.email}`}
           />
           <SocialCard
             icon={Linkedin}
-            label="LinkedIn"
-            value="Connect"
+            label={t('contact.linkedin')}
+            value={t('contact.linkedinCta')}
             href={profile.social.linkedin}
           />
           <SocialCard
             icon={Github}
-            label="GitHub"
-            value="Follow"
+            label={t('contact.github')}
+            value={t('contact.githubCta')}
             href={profile.social.github}
           />
         </motion.div>
@@ -148,8 +150,8 @@ const Contact = () => {
 
             <form onSubmit={handleSubmit} className="space-y-5 relative z-10">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <InputField label="Name" name="name" value={formData.name} onChange={handleChange} />
-                <InputField label="Email" name="email" type="email" value={formData.email} onChange={handleChange} />
+                <InputField label={t('contact.form.name')} name="name" value={formData.name} onChange={handleChange} />
+                <InputField label={t('contact.form.email')} name="email" type="email" value={formData.email} onChange={handleChange} />
               </div>
 
               <div className="relative group">
@@ -167,7 +169,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="absolute left-4 top-2 text-xs font-medium text-muted-foreground transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-muted-foreground/70 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary"
                 >
-                  Message
+                  {t('contact.form.message')}
                 </label>
               </div>
 
@@ -179,16 +181,16 @@ const Contact = () => {
                 {isSubmitting ? (
                   <>
                     <Loader2 className="w-5 h-5 animate-spin" />
-                    Sending...
+                    {t('contact.form.sending')}
                   </>
                 ) : isSent ? (
                   <>
                     <CheckCircle2 className="w-5 h-5" />
-                    Message Sent!
+                    {t('contact.form.sent')}
                   </>
                 ) : (
                   <>
-                    Send Message
+                    {t('contact.form.submit')}
                     <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
