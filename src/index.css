@@ -91,4 +91,16 @@
     font-family: 'Poppins', sans-serif;
     /* Changed to Poppins for that specific look */
   }
+
+  /* Autofill styles fix for Dark Mode */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: hsl(var(--foreground));
+    -webkit-box-shadow: 0 0 0px 1000px hsl(var(--background)) inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 }
