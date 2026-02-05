@@ -9,7 +9,7 @@
     "hero": {
         "greeting": "HOLA, SOY",
         "role": "Y soy",
-        "description": "Me apasiona crear sitios web funcionales y responsivos. Especializado en tecnologías web modernas como React y CSS avanzado.",
+        "description": "Me apasiona crear sitios web bonitos y responsivos. Especializado en tecnologías web modernas como React y CSS avanzado.",
         "cta": "Ver Proyectos"
     },
     "about": {
@@ -41,11 +41,12 @@
         "subtitle": "Mi Trabajo",
         "title": "Proyectos",
         "titleHighlight": "Destacados",
+        "viewMore": "Ver más en GitHub",
         "viewDemo": "Ver Demo",
         "viewCode": "Ver Código",
         "items": {
             "rrhh": {
-                "title": "RRHH Application",
+                "title": "Aplicación de RRHH",
                 "description": "Aplicación de RRHH con React, Laravel y Tailwind CSS integrada con Inertia.js, diseñada para gestionar datos de empleados en una empresa."
             },
             "weather": {

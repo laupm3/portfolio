@@ -140,7 +140,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-secondary/30 hover:bg-primary hover:text-primary-foreground border border-border transition-all duration-300 group"
           >
-            <span>View More on GitHub</span>
+            <span>{t('projects.viewMore')}</span>
             <Github className="w-4 h-4 group-hover:rotate-12 transition-transform" />
           </a>
         </div>
