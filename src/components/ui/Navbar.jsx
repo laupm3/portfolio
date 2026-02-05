@@ -1,18 +1,20 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Container from '../layout/Container'
 import { profile } from '../../data/profile'
 import ThemeToggle from './ThemeToggle'
 import LanguageToggle from './LanguageToggle'
 
-const links = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
-]
-
 export default function Navbar() {
+  const { t } = useTranslation()
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const links = [
+    { label: t('nav.about'), href: '#about' },
+    { label: t('nav.skills'), href: '#skills' },
+    { label: t('nav.projects'), href: '#projects' },
+    { label: t('nav.contact'), href: '#contact' },
+  ]
 
   const closeMenu = () => setMenuOpen(false)
 

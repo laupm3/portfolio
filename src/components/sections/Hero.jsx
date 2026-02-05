@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
 import { Github, Linkedin } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { profile } from '../../data/profile'
 import Container from '../layout/Container'
 
 export default function Hero() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20 lg:py-32 relative overflow-hidden">
       {/* Background Glow Effect */}
@@ -18,7 +21,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               className="text-primary font-bold tracking-wider mb-2"
             >
-              HOLA, SOY
+              {t('hero.greeting')}
             </motion.p>
 
             <motion.h1
@@ -36,7 +39,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-xl sm:text-2xl text-foreground/80 font-medium mb-6"
             >
-              Y soy <span className="text-primary font-bold">{profile.role}</span>
+              {t('hero.role')} <span className="text-primary font-bold">{profile.role}</span>
             </motion.h2>
 
             <motion.p
@@ -45,7 +48,7 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Me apasiona crear sitios web bonitos y responsivos. Especializado en tecnologías web modernas como React y CSS avanzado.
+              {t('hero.description')}
             </motion.p>
 
             <motion.div
@@ -58,7 +61,7 @@ export default function Hero() {
                 href="#projects"
                 className="inline-flex items-center justify-center bg-primary text-primary-foreground font-bold py-3.5 px-8 rounded-full shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-105 transition-all duration-300"
               >
-                Ver Proyectos
+                {t('hero.cta')}
               </a>
               <div className="flex gap-4 items-center justify-center">
                 <a
