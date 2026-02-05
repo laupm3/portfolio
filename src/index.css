@@ -6,31 +6,41 @@
 
 @layer base {
   :root {
-    /* Forcing Cyber Theme for both modes initially to match request, 
-       or distinct Light mode if desired. Assuming Dark Mode focus based on image. */
+    /* REFINE LIGHT MODE V2: Higher Contrast & Separation */
 
-    /* Light Mode (Optional, clean slate) */
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
-    --primary: 190 100% 50%;
-    /* Cyan */
-    --primary-foreground: 195 90% 10%;
-    /* ... other light mode vars kept standard ... */
+    /* Background: Clearly distinct Slate-100ish, so white cards POP */
+    --background: 220 20% 94%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    /* Primary: Stronger Teal/Cerulean */
+    --primary: 192 90% 35%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Cards: Pure White with distinct borders */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --secondary: 210 40% 96.1%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    /* Secondary: Visible Gray (Slate-200) for buttons/badges to stand out */
+    --secondary: 220 20% 90%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 190 100% 50%;
-    --accent-foreground: 195 90% 10%;
+
+    --muted: 220 20% 90%;
+    --muted-foreground: 215.4 16.3% 40%;
+
+    --accent: 192 90% 35%;
+    --accent-foreground: 210 40% 98%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 190 100% 50%;
+
+    /* Borders: darker for clear definition */
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 192 90% 35%;
+
     --radius: 1rem;
   }
 
