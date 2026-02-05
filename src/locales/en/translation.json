@@ -54,7 +54,7 @@
             },
             "portfolio": {
                 "title": "Portfolio Website",
-                "description": "Modern, responsive portfolio website featuring a Cyber/Dark aesthetic, smooth animations, and a contact form."
+                "description": "Modern, responsive portfolio website featuring dark/light mode, es/eng language switcher, smooth animations, and a contact form."
             }
         }
     },

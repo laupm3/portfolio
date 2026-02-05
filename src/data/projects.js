@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 3,
     title: 'Portfolio Website',
-    description: 'Modern, responsive portfolio website featuring a Cyber/Dark aesthetic, smooth animations, and a contact form.',
+    description: 'Modern, responsive portfolio website with React and Tailwind CSS, dark/light mode, es/eng language switcher, smooth animations, and a contact form.',
     tags: ['React', 'Vite', 'Tailwind', 'Framer Motion'],
     demo: '#',
     github: 'https://github.com/laupm3/portfolio',

@@ -73,7 +73,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,234,255,0.1)] dark:hover:shadow-[0_0_30px_rgba(0,234,255,0.15)]"
+              className="group relative bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,234,255,0.1)] dark:hover:shadow-[0_0_30px_rgba(0,234,255,0.15)] flex flex-col h-full"
             >
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden bg-secondary/20">
@@ -86,7 +86,7 @@ const Projects = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {t(project.titleKey)}
                 </h3>
@@ -107,7 +107,7 @@ const Projects = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4">
+                <div className="flex gap-4 mt-auto">
                   <a
                     href={project.demo}
                     target="_blank"
@@ -130,6 +130,19 @@ const Projects = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* 'View All' Button (Optional) */}
+        <div className="mt-16 text-center">
+          <a
+            href="https://github.com/laupm3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-secondary/30 hover:bg-primary hover:text-primary-foreground border border-border transition-all duration-300 group"
+          >
+            <span>View More on GitHub</span>
+            <Github className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+          </a>
         </div>
       </Container>
     </section>
