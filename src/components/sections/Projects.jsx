@@ -1,42 +1,13 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Github, ExternalLink, Code2 } from 'lucide-react';
 import Container from '../layout/Container';
 
+import { projects } from '../../data/projects';
+
 const Projects = () => {
   const { t } = useTranslation();
-
-  // Define projects with translation keys and original data
-  const projects = [
-    {
-      id: 1,
-      titleKey: 'projects.items.rrhh.title',
-      descriptionKey: 'projects.items.rrhh.description',
-      tags: ['React', 'Tailwind CSS', 'Laravel'],
-      demo: '#',
-      github: 'https://github.com/laupm3/React-Inertia-Breeze-Tailwind',
-      image: '/RRHH.png',
-    },
-    {
-      id: 2,
-      titleKey: 'projects.items.weather.title',
-      descriptionKey: 'projects.items.weather.description',
-      tags: ['Angular', 'CSS', 'API Integration'],
-      demo: '#',
-      github: 'https://github.com/laupm3',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop',
-    },
-    {
-      id: 3,
-      titleKey: 'projects.items.portfolio.title',
-      descriptionKey: 'projects.items.portfolio.description',
-      tags: ['React', 'Vite', 'Tailwind', 'Framer Motion'],
-      demo: '#',
-      github: 'https://github.com/laupm3/portfolio',
-      image: '/portfolio.png',
-    },
-  ];
 
   return (
     <section id="projects" className="py-20 relative overflow-hidden">

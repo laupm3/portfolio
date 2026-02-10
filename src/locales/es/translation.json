@@ -1,10 +1,13 @@
 {
     "nav": {
         "home": "Inicio",
+        "skipToContent": "Saltar al contenido",
         "about": "Sobre",
-        "skills": "Servicios",
+        "skills": "Especialidades",
         "projects": "Proyectos",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "openMenu": "Abrir menú",
+        "closeMenu": "Cerrar menú"
     },
     "hero": {
         "greeting": "HOLA, SOY",
@@ -16,12 +19,14 @@
         "title": "Sobre",
         "subtitle": "Mí",
         "description": "Soy una desarrolladora frontend apasionada por crear experiencias web excepcionales. Me encanta transformar diseños en código limpio y eficiente.",
-        "codeTitle": "Mi Stack Tecnológico"
+        "codeTitle": "Mi Stack Tecnológico",
+        "highlight1": "Desarrollo Frontend",
+        "highlight2": "Tecnología Moderna"
     },
     "skills": {
         "subtitle": "Lo Que Hago",
         "title": "Mis",
-        "titleHighlight": "Servicios"
+        "titleHighlight": "Especialidades"
     },
     "services": {
         "frontend": {

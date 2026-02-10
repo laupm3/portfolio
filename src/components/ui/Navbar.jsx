@@ -64,9 +64,9 @@ export default function Navbar() {
               className="p-2 -m-2 rounded-lg text-muted-foreground hover:text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
               onClick={() => setMenuOpen((o) => !o)}
               aria-expanded={menuOpen}
-              aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+              aria-label={menuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
             >
-              <span className="sr-only">{menuOpen ? 'Cerrar menú' : 'Abrir menú'}</span>
+              <span className="sr-only">{menuOpen ? t('nav.closeMenu') : t('nav.openMenu')}</span>
               {menuOpen ? (
                 <span className="relative flex w-6 h-6" aria-hidden>
                   <span className="absolute inset-0 m-auto w-5 h-0.5 bg-current rounded rotate-45" />

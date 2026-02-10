@@ -1,10 +1,13 @@
 {
     "nav": {
         "home": "Home",
+        "skipToContent": "Skip to content",
         "about": "About",
-        "skills": "Services",
+        "skills": "Specialties",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu"
     },
     "hero": {
         "greeting": "HI, I'M",
@@ -16,12 +19,14 @@
         "title": "About",
         "subtitle": "Me",
         "description": "I'm a frontend developer passionate about creating exceptional web experiences. I love transforming designs into clean and efficient code.",
-        "codeTitle": "My Tech Stack"
+        "codeTitle": "My Tech Stack",
+        "highlight1": "Frontend Dev",
+        "highlight2": "Modern Tech"
     },
     "skills": {
         "subtitle": "What I Do",
         "title": "My",
-        "titleHighlight": "Services"
+        "titleHighlight": "Specialties"
     },
     "services": {
         "frontend": {

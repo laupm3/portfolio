@@ -1,4 +1,4 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Layout, Palette, Zap } from 'lucide-react';
@@ -11,30 +11,10 @@ const iconMap = {
   zap: Zap,
 };
 
+import { services } from '../../data/skills';
+
 export default function Skills() {
   const { t } = useTranslation();
-
-  // Define services structure with translation keys
-  const services = [
-    {
-      titleKey: 'services.frontend.title',
-      descriptionKey: 'services.frontend.description',
-      icon: 'layout',
-      tools: ['React', 'Tailwind', 'JavaScript', 'HTML/CSS']
-    },
-    {
-      titleKey: 'services.uiux.title',
-      descriptionKey: 'services.uiux.description',
-      icon: 'palette',
-      tools: ['Figma', 'Framer Motion', 'Responsive Design', 'Accessibility']
-    },
-    {
-      titleKey: 'services.performance.title',
-      descriptionKey: 'services.performance.description',
-      icon: 'zap',
-      tools: ['Vite', 'SEO', 'Performance', 'Clean Code']
-    }
-  ];
 
   return (
     <section id="skills" className="py-20 lg:py-32 relative overflow-hidden">

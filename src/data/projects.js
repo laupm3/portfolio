@@ -1,17 +1,17 @@
 export const projects = [
   {
     id: 1,
-    title: 'RRHH Application',
-    description: 'RRHH Application built with React, Laravel and Tailwind CSS designed to manage employee data in a company.',
+    titleKey: 'projects.items.rrhh.title',
+    descriptionKey: 'projects.items.rrhh.description',
     tags: ['React', 'Tailwind CSS', 'Laravel'],
     demo: '#',
-    github: 'https://github.com/laupm3',
-    image: 'RRHH.png',
+    github: 'https://github.com/laupm3/React-Inertia-Breeze-Tailwind',
+    image: '/RRHH.png',
   },
   {
     id: 2,
-    title: 'Weather App',
-    description: 'Real-time weather application fetching data from external APIs. Features dynamic background changes based on weather conditions.',
+    titleKey: 'projects.items.weather.title',
+    descriptionKey: 'projects.items.weather.description',
     tags: ['Angular', 'CSS', 'API Integration'],
     demo: '#',
     github: 'https://github.com/laupm3',
@@ -19,11 +19,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Portfolio Website',
-    description: 'Modern, responsive portfolio website with React and Tailwind CSS, dark/light mode, es/eng language switcher, smooth animations, and a contact form.',
+    titleKey: 'projects.items.portfolio.title',
+    descriptionKey: 'projects.items.portfolio.description',
     tags: ['React', 'Vite', 'Tailwind', 'Framer Motion'],
     demo: '#',
     github: 'https://github.com/laupm3/portfolio',
-    image: 'portfolio.png',
+    image: '/portfolio.png',
   },
-]
+];

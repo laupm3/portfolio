@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars -- motion used as motion.div in JSX
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import About from '../components/sections/About'
 import Contact from '../components/sections/Contact'

@@ -1,8 +1,9 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Code2, Terminal, Cpu } from 'lucide-react';
+import { Code2, Terminal } from 'lucide-react';
 import Container from '../layout/Container';
+import { profile } from '../../data/profile';
 
 export default function About() {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ export default function About() {
             <motion.span
               className="text-primary font-medium tracking-wider text-sm uppercase block mb-2"
             >
-              {t('about.title')}
+              {t('about.subtitle')}
             </motion.span>
             <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 mb-6">
               {t('about.title')} <span className="text-primary">{t('about.subtitle')}</span>
@@ -38,13 +39,13 @@ export default function About() {
                 <div className="p-2 rounded-lg bg-primary/10 text-primary">
                   <Code2 className="w-5 h-5" />
                 </div>
-                <span className="font-medium">Frontend Dev</span>
+                <span className="font-medium">{t('about.highlight1')}</span>
               </div>
               <div className="p-4 rounded-xl bg-secondary/30 border border-border/50 flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-primary/10 text-primary">
                   <Terminal className="w-5 h-5" />
                 </div>
-                <span className="font-medium">Modern Tech</span>
+                <span className="font-medium">{t('about.highlight2')}</span>
               </div>
             </div>
           </motion.div>
@@ -70,8 +71,8 @@ export default function About() {
                 </div>
                 <div className="space-y-2 text-muted-foreground">
                   <p><span className="text-purple-400">const</span> <span className="text-blue-400">developer</span> = <span className="text-yellow-400">{'{'}</span></p>
-                  <p className="pl-4">name: <span className="text-green-400">'Laura Prieto'</span>,</p>
-                  <p className="pl-4">role: <span className="text-green-400">'Frontend Developer'</span>,</p>
+                  <p className="pl-4">name: <span className="text-green-400">'{profile.name}'</span>,</p>
+                  <p className="pl-4">role: <span className="text-green-400">'{profile.role}'</span>,</p>
                   <p className="pl-4">skills: <span className="text-yellow-400">['React', 'Vite', 'Tailwind']</span>,</p>
                   <p className="pl-4">hardWorker: <span className="text-orange-400">true</span>,</p>
                   <p className="pl-4">quickLearner: <span className="text-orange-400">true</span></p>
