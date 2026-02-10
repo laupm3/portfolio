@@ -21,11 +21,12 @@ export default function Navbar() {
   return (
     <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <Container>
-        <nav className="flex items-center justify-between h-20" aria-label="Navegación principal">
+        <nav className="flex items-center justify-between h-20" aria-label={t('nav.mainNav')}>
           {/* Logo / Nombre - Cyber Style */}
           <a
             href="#"
             className="text-xl font-bold tracking-tighter text-foreground group"
+            aria-label={t('nav.homeLabel')}
           >
             <span className="text-primary">&lt;</span>
             {profile.name.split(' ')[0]}

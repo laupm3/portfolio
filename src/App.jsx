@@ -1,10 +1,15 @@
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Footer from './components/layout/Footer'
 import Navbar from './components/ui/Navbar'
 import Home from './pages/Home'
 
 function App() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language
+  }, [i18n.language])
 
   return (
     <div className="flex flex-col min-h-screen">

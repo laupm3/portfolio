@@ -57,7 +57,7 @@ export default function Skills() {
                 {/* Icon */}
                 <div className="flex justify-center mb-6">
                   <div className="p-4 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110">
-                    <Icon className="w-8 h-8" />
+                    <Icon className="w-8 h-8" aria-hidden="true" />
                   </div>
                 </div>
 

@@ -23,25 +23,25 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:-translate-y-1"
-              title="GitHub"
+              aria-label="GitHub"
             >
-              <Github className="w-5 h-5" />
+              <Github className="w-5 h-5" aria-hidden="true" />
             </a>
             <a
               href={profile.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:-translate-y-1"
-              title="LinkedIn"
+              aria-label="LinkedIn"
             >
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-5 h-5" aria-hidden="true" />
             </a>
             <a
               href={`mailto:${profile.email}`}
               className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:-translate-y-1"
-              title="Email"
+              aria-label="Email"
             >
-              <Mail className="w-5 h-5" />
+              <Mail className="w-5 h-5" aria-hidden="true" />
             </a>
           </div>
         </div>

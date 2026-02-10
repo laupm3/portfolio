@@ -94,8 +94,9 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     /* className="flex items-center justify-center gap-2 px-4 py-2.5 border border-border hover:border-primary/50 hover:bg-primary/10 rounded-lg font-medium transition-colors" */
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all duration-300"
+                    aria-label={`${t('projects.viewCode')}: ${t(project.titleKey)}`}
                   >
-                    <Github className="w-4 h-4" />
+                    <Github className="w-4 h-4" aria-hidden="true" />
                     {/* <span className="sr-only">{t('projects.viewCode')}</span> */}
                     <span>{t('projects.viewCode')}</span>
                   </a>

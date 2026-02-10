@@ -7,7 +7,9 @@
         "projects": "Proyectos",
         "contact": "Contacto",
         "openMenu": "Abrir menú",
-        "closeMenu": "Cerrar menú"
+        "closeMenu": "Cerrar menú",
+        "mainNav": "Navegación principal",
+        "homeLabel": "Ir a la página de inicio"
     },
     "hero": {
         "greeting": "HOLA, SOY",

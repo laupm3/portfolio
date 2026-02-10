@@ -33,13 +33,14 @@ const SocialCard = ({ icon: Icon, label, value, href }) => (
     target="_blank"
     rel="noopener noreferrer"
     className="flex flex-row sm:flex-col items-center justify-center gap-3 sm:gap-0 p-3 sm:p-4 rounded-xl bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/5 group transition-all duration-300 hover:-translate-y-1"
+    aria-label={`${label}: ${value}`}
   >
     <div className="p-2 sm:p-3 rounded-full bg-secondary/50 text-foreground group-hover:bg-primary group-hover:text-primary-foreground sm:mb-3 transition-colors">
-      <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+      <Icon className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
     </div>
     <div className="flex flex-col sm:items-center">
       <span className="text-sm font-medium text-foreground sm:mb-1">{label}</span>
-      <span className="text-xs text-muted-foreground group-hover:text-primary transition-colors truncate max-w-full hidden sm:block">{value}</span>
+      <span className="text-xs text-muted-foreground group-hover:text-primary transition-colors truncate max-w-full hidden sm:block font-mono tracking-tighter">{value}</span>
     </div>
   </a>
 );
