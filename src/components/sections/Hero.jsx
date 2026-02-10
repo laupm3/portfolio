@@ -29,7 +29,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-foreground mb-4 leading-tight"
+              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-foreground mb-4 leading-tight text-glow"
             >
               {profile.name}
             </motion.h1>
@@ -63,6 +63,13 @@ export default function Hero() {
                 className="inline-flex items-center justify-center bg-primary text-primary-foreground font-bold py-3.5 px-8 rounded-full shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-105 transition-all duration-300"
               >
                 {t('hero.cta')}
+              </a>
+              <a
+                href={profile.cv}
+                download
+                className="inline-flex items-center justify-center border border-border hover:border-primary/50 hover:bg-primary/5 text-foreground font-bold py-3.5 px-8 rounded-full transition-all duration-300"
+              >
+                {t('hero.downloadCV')}
               </a>
               <div className="flex gap-4 items-center justify-center">
                 <a

@@ -15,7 +15,8 @@
         "greeting": "HI, I'M",
         "role": "And I'm a",
         "description": "I'm passionate about creating beautiful and responsive websites. Specialized in modern web technologies like React and advanced CSS.",
-        "cta": "View Projects"
+        "cta": "View Projects",
+        "downloadCV": "Download CV"
     },
     "about": {
         "title": "About",

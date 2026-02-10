@@ -7,6 +7,8 @@ export const profile = {
     // 1. Add your photo file (e.g., 'me.jpg') to the 'public' folder in your project root.
     // 2. Update the line below to: image: "/me.jpg"
     image: "/perfil.png", // Set to null to fallback to the placeholder, or "/your-photo.jpg"
+    cv: "/cv.pdf", // Path to your CV in the public folder
+    formspreeId: "xdalaggr", // Get your ID from https://formspree.io/
     social: {
         github: "https://github.com/laupm3",
         linkedin: "https://www.linkedin.com/in/laura-prieto-merino/"

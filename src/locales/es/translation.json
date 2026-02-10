@@ -15,7 +15,8 @@
         "greeting": "HOLA, SOY",
         "role": "Y soy",
         "description": "Me apasiona crear sitios web bonitos y responsivos. Especializado en tecnologías web modernas como React y CSS avanzado.",
-        "cta": "Ver Proyectos"
+        "cta": "Ver Proyectos",
+        "downloadCV": "Descargar CV"
     },
     "about": {
         "title": "Sobre",

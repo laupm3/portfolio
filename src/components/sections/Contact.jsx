@@ -65,14 +65,29 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    window.location.href = `mailto:${profile.email}?subject=Portfolio Contact from ${formData.name}&body=${formData.message}`;
-    setIsSubmitting(false);
-    setIsSent(true);
-    setTimeout(() => {
-      setIsSent(false);
-      setFormData({ name: '', email: '', message: '' });
-    }, 3000);
+
+    try {
+      // Usamos el endpoint de Formspree (el usuario solo tendrá que poner su ID luego)
+      const response = await fetch(`https://formspree.io/f/${profile.formspreeId || 'placeholder'}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setIsSent(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSent(false), 5000);
+      } else {
+        throw new Error('Error al enviar');
+      }
+    } catch (error) {
+      alert(t('contact.form.error') || 'Error sending message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
