@@ -1,8 +1,8 @@
-# Laura Prieto · Personal Portfolio
+# Laura Prieto · Portfolio Personal
 
 Un portfolio moderno y profesional diseñado con una estética Cyber/Premium, enfocado en el desarrollo Frontend.
 
-![Laura Prieto Portfolio](/public/screenshot.png) *(Próximamente)*
+![Laura Prieto Portfolio](/public/portfolio.png) 
 
 ## ✨ Características Principales
 
@@ -57,4 +57,4 @@ Toda la información personal se encuentra centralizada en `src/data/profile.js`
 
 ---
 
-Desarrollador por **Laura Prieto** · 2026
+Desarrollado por **Laura Prieto** · 2026
