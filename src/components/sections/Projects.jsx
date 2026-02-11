@@ -5,6 +5,7 @@ import { Github, ExternalLink, Code2 } from 'lucide-react';
 import Container from '../layout/Container';
 
 import { projects } from '../../data/projects';
+import { profile } from '../../data/profile';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -109,7 +110,7 @@ const Projects = () => {
         {/* 'View All' Button (Optional) */}
         <div className="mt-16 text-center">
           <a
-            href="https://github.com/laupm3"
+            href={profile.social.github}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-secondary/30 hover:bg-primary hover:text-primary-foreground border border-border transition-all duration-300 group"
