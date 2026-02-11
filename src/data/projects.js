@@ -14,7 +14,7 @@ export const projects = [
     descriptionKey: 'projects.items.weather.description',
     tags: ['Angular', 'CSS', 'API Integration'],
     demo: '#',
-    github: 'https://github.com/laupm3',
+    github: 'https://github.com/laupm3/weather-app',
     image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop',
   },
   {
