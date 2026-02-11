@@ -24,7 +24,7 @@ export default function About() {
             <motion.span
               className="text-primary font-medium tracking-wider text-sm uppercase block mb-2"
             >
-              {t('about.subtitle')}
+              {t('about.title')}
             </motion.span>
             <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 mb-6">
               {t('about.title')} <span className="text-primary">{t('about.subtitle')}</span>
