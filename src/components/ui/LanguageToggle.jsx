@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Languages, Check, ChevronDown } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion as Motion } from 'framer-motion';
 
 export default function LanguageToggle() {
     const { i18n } = useTranslation();
@@ -47,7 +47,7 @@ export default function LanguageToggle() {
 
             <AnimatePresence>
                 {isOpen && (
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 10, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
@@ -68,7 +68,7 @@ export default function LanguageToggle() {
                                 {i18n.language === lang.code && <Check className="w-4 h-4" />}
                             </button>
                         ))}
-                    </motion.div>
+                    </Motion.div>
                 )}
             </AnimatePresence>
         </div>

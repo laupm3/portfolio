@@ -34,7 +34,7 @@ export default function Navbar() {
           </a>
 
           {/* Links - visible en desktop */}
-          <ul className="hidden sm:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-8">
             {links.map(({ label, href }) => (
               <li key={href}>
                 <a
@@ -57,7 +57,7 @@ export default function Navbar() {
           </ul>
 
           {/* Botón hamburger - solo móvil */}
-          <div className="flex items-center gap-3 sm:hidden">
+          <div className="flex items-center gap-3 md:hidden">
             <LanguageToggle />
             <ThemeToggle />
             <button
@@ -87,7 +87,7 @@ export default function Navbar() {
 
       {/* Panel móvil desplegable */}
       <div
-        className={`sm:hidden overflow-hidden transition-all duration-300 ease-out ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
           }`}
         aria-hidden={!menuOpen}
       >

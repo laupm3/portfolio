@@ -80,25 +80,28 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex gap-4 mt-auto">
-                  {/*                   <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    {t('projects.viewDemo')}
-                  </a> */}
+                  {project.demo && project.demo !== '#' && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-sm bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg shadow-primary/20 whitespace-nowrap"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      {t('projects.viewDemo')}
+                    </a>
+                  )}
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    /* className="flex items-center justify-center gap-2 px-4 py-2.5 border border-border hover:border-primary/50 hover:bg-primary/10 rounded-lg font-medium transition-colors" */
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all duration-300"
+                    className={`flex-1 flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-lg font-medium transition-all duration-300 whitespace-nowrap ${project.demo && project.demo !== '#'
+                        ? 'border border-border hover:border-primary/50 hover:bg-primary/10 text-foreground'
+                        : 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20'
+                      }`}
                     aria-label={`${t('projects.viewCode')}: ${t(project.titleKey)}`}
                   >
                     <Github className="w-4 h-4" aria-hidden="true" />
-                    {/* <span className="sr-only">{t('projects.viewCode')}</span> */}
                     <span>{t('projects.viewCode')}</span>
                   </a>
                 </div>

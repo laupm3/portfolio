@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react';
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Mail, Linkedin, Github, Send, Loader2, CheckCircle2 } from 'lucide-react';
@@ -27,6 +28,7 @@ const InputField = ({ label, name, type = "text", value, onChange, required = tr
   </div>
 );
 
+ 
 const SocialCard = ({ icon: Icon, label, value, href }) => (
   <a
     href={href}
