@@ -21,10 +21,10 @@
     "about": {
         "title": "About",
         "subtitle": "Me",
-        "description": "I'm a frontend developer passionate about creating exceptional web experiences. I love transforming designs into clean and efficient code.",
-        "codeTitle": "My Tech Stack",
-        "highlight1": "Frontend Dev",
-        "highlight2": "Modern Tech"
+        "description": "I am a frontend developer focused on building scalable and maintainable applications. I apply SOLID principles and Clean Code to create robust software, working effectively in Agile environments.",
+        "codeTitle": "Stack & Architecture",
+        "highlight1": "React Architecture",
+        "highlight2": "Quality & Testing"
     },
     "skills": {
         "subtitle": "What I Do",
@@ -40,9 +40,9 @@
             "title": "UI/UX Implementation",
             "description": "Translating designs into interactive, accessible, and user-friendly interfaces. I ensure smooth animations and intuitive navigation."
         },
-        "performance": {
-            "title": "Performance Optimization",
-            "description": "Optimizing web applications for speed and efficiency. Implementing best practices for SEO and ensuring cross-browser compatibility."
+        "architecture": {
+            "title": "Architecture & Quality",
+            "description": "I design scalable solutions applying SOLID principles and modern design patterns. I integrate testing and CI/CD practices to ensure code reliability."
         }
     },
     "projects": {
@@ -54,16 +54,16 @@
         "viewCode": "View Code",
         "items": {
             "rrhh": {
-                "title": "RRHH Application",
-                "description": "RRHH Application built with React, Laravel and Tailwind CSS integrated with Inertia.js, designed to manage employee data in a company."
+                "title": "HR Management Platform",
+                "description": "Comprehensive employee management system built with MVC architecture. Integrates REST API, user roles, and complex state management for a corporate environment."
             },
             "weather": {
-                "title": "Weather App",
-                "description": "Real-time weather application fetching data from external APIs. Features dynamic background changes based on weather conditions."
+                "title": "Weather Dashboard",
+                "description": "External API consumption application (OpenWeather) optimized with Axios. Implements data transformation and conditional rendering based on asynchronous responses."
             },
             "portfolio": {
-                "title": "Portfolio Website",
-                "description": "Modern, responsive portfolio website featuring dark/light mode, es/eng language switcher, smooth animations, and a contact form."
+                "title": "Professional Portfolio",
+                "description": "SPA built with React 18 and Vite following component architecture. Implements i18n, dark mode, and accessibility/SEO best practices."
             }
         }
     },
