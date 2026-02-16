@@ -15,7 +15,7 @@ export const projects = [
     tags: ['Angular', 'CSS', 'API Integration'],
     demo: 'https://weather-app-laurapm.vercel.app/',
     github: 'https://github.com/laupm3/weather-app',
-    image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop',
+    image: '/weather-app.png',
   },
   {
     id: 3,

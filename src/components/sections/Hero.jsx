@@ -66,7 +66,7 @@ export default function Hero() {
               </a>
               <a
                 href={profile.cv}
-                download
+                download="CV_Laura_Prieto.pdf"
                 className="inline-flex items-center justify-center border border-border hover:border-primary/50 hover:bg-primary/5 text-foreground font-bold py-3.5 px-8 rounded-full transition-all duration-300"
               >
                 {t('hero.downloadCV')}
