@@ -9,7 +9,7 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-20 lg:py-32 relative overflow-hidden">
+    <section id="about" className="py-20 lg:py-32 relative overflow-hidden scroll-mt-20">
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-3xl -z-10" />
 

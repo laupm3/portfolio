@@ -11,7 +11,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="py-20 relative overflow-hidden">
+    <section id="projects" className="py-20 relative overflow-hidden scroll-mt-20">
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-3xl -z-10" />
@@ -96,8 +96,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex-1 flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-lg font-medium transition-all duration-300 whitespace-nowrap ${project.demo && project.demo !== '#'
-                        ? 'border border-border hover:border-primary/50 hover:bg-primary/10 text-foreground'
-                        : 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20'
+                      ? 'border border-border hover:border-primary/50 hover:bg-primary/10 text-foreground'
+                      : 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20'
                       }`}
                     aria-label={`${t('projects.viewCode')}: ${t(project.titleKey)}`}
                   >
