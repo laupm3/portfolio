@@ -87,7 +87,7 @@ export default function Navbar() {
 
       {/* Panel móvil desplegable */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden absolute left-0 right-0 top-[80px] overflow-hidden transition-all duration-300 ease-out z-40 ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
           }`}
         aria-hidden={!menuOpen}
       >

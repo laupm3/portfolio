@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
- 
+
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Mail, Linkedin, Github, Send, Loader2, CheckCircle2 } from 'lucide-react';
@@ -28,7 +28,7 @@ const InputField = ({ label, name, type = "text", value, onChange, required = tr
   </div>
 );
 
- 
+
 const SocialCard = ({ icon: Icon, label, value, href }) => (
   <a
     href={href}
@@ -93,7 +93,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 relative overflow-hidden">
+    <section id="contact" className="py-20 relative overflow-hidden scroll-mt-20">
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -z-10" />
 
       <Container>

@@ -17,7 +17,7 @@ export default function Skills() {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="py-20 lg:py-32 relative overflow-hidden">
+    <section id="skills" className="py-20 lg:py-32 relative overflow-hidden scroll-mt-20">
       {/* Background decorations */}
       <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-3xl -z-10 -translate-y-1/2" />
 

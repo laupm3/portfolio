@@ -6,7 +6,7 @@ export const services = [
     tools: ['React 18', 'TypeScript', 'Tailwind', 'Material UI']
   },
   {
-    titleKey: 'services.architecture.title', // Changed from performance to architecture
+    titleKey: 'services.architecture.title',
     descriptionKey: 'services.architecture.description',
     icon: 'zap',
     tools: ['SOLID', 'Clean Code', 'CI/CD', 'Microfrontends (Concept)']
